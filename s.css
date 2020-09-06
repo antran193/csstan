@@ -1,0 +1,64 @@
+.back{
+    background-color: rgb(106, 178, 236);
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.do{
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+}
+.back1{
+    position: absolute;
+    left: 70px;
+    bottom: 25px;
+}
+div.back1{
+    width: 100%;
+    height: 300px;
+}
+.back1 .xanh{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.back1 .vang{
+    position: absolute;
+    bottom: -5px;
+    left: 50px;
+}
+.do{
+    width: 200px;
+    height: 300px;
+    background-color: red;
+    border-radius: 20px;
+}
+.xanh{
+    width: 200px;
+    height: 300px;
+    background-color: greenyellow;
+    border-radius: 20px;
+}
+.vang{
+    width: 200px;
+    height: 300px;
+    background-color: yellow;
+    border-radius: 20px;
+}
+.do:hover{
+    transform: translateY(-100px);
+    transition: all 0.5s;
+}
+div.do:hover+div.back1{
+    transform: translateX(100px);
+    transition: all 0.5s;
+}
+.xanh:hover{
+    transform: translateY(-100px);
+    transition: all 0.5s;
+}
+.xanh:hover+.vang{
+    transform: translateX(100px);
+    transition: all 0.5s;
+}
